@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #emailField {color:blue} /*a. id emailfield blauer text*/
+        a[href^="https://"]::after {content: "(sicher)"} /*b. alle links die https enthalten sollten nachgestellt ein "(sicher)" haben*/
+        section:last-child h1 {color:red} /*c überschrift in der letzten section rot */
+        section:first-child h1 {color: green} /*c. überschrift in der ersten section grün*/
+        #main {display: flex} /*d. menü links neben inhalt */
+        nav {width: 20%; alignment: left} /*d. links neben inhalt 20 prozent */
+        .content {width: 80%; alignment: right} /*d. inhalt rechts 80 prozent */
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Web Page</h1>
+</header>
+
+<div id="main">
+    <nav>
+        <ul>
+            <li>Education</li>
+            <li>Hobbies</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section>
+            <h1>Education</h1>
+            Master program at <a href="https://www.aau.at">AUU.AT</a>.
+        </section>
+        <section>
+            <h1>Contact</h1>
+            <label for ="emailField">Email: </label>
+            <input type ="email" id="emailField">
+        </section>
+        <section>
+            <h1>Blog</h1>
+            Read my Blog at <a href = "http://myblog.at">myblog.at</a>
+        </section>
+    </div>
+</div>
+<footer>
+    <ul>
+        <li>Impressum</li>
+        <li>Contact</li>
+    </ul>
+</footer>
+</body>
+</html>
